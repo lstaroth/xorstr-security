@@ -52,7 +52,7 @@ template <typename T, size_t N>
 class EncString
 {
 public:
-	template<int... Index>
+	template<size_t... Index>
 	constexpr EncString(const T(&str)[N], std::index_sequence<Index...>) noexcept
 		: encBuffer{ { Encryptcharacter(str[Index])... } }, status{ false } {}
 

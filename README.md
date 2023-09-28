@@ -3,7 +3,7 @@
 
 ### 概述
 
-两种绕过方式，基于不同的原理完成
+两种绕过方式基于不同的原理实现，xorstr_s & xorstr_h
 
 ### xorstr_s
 
@@ -57,8 +57,43 @@ Transsion
 Honor
 ```
 
-原理与绕过模式解析文章：todo
+### xorstr_h
+
+|            types            | status |
+| :-------------------------: | :----: |
+| Flare-floss static strings  | bypass |
+|  Flare-floss stack strings  | bypass |
+|  Flare-floss tight strings  | bypass |
+| Flare-floss decoded strings | bypass |
+
+测试结果：demo与xorstr_s一致，所有模式下的绕过
+
+```bash
+ FLOSS STACK STRINGS
+ ─────────────────────
+o]QOIR[6<
+}<L<L<P<Y<6<<<
+dU]SQU6<
+s<L<L<S<
+<{<N<S<I<L<6<<<
+JUJS6
+h<N<]<R<O<O<U<S<R<6<<<
+tSRSN
+n<Y<]<P<Q<Y<<<
+qSHSNSP]<
+t<I<]<K<Y<U<<<
+sHTYNO<
+
+ ─────────────────────
+  FLOSS TIGHT STRINGS
+ ─────────────────────
+
+ ───────────────────────
+  FLOSS DECODED STRINGS
+ ───────────────────────
+o]QOIR[6<
+```
 
 ### **todo**
 
-DECODED模式完全绕过的方案
+详细分析与绕过细节的解析文章

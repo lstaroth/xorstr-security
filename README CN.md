@@ -2,29 +2,29 @@
 <span>xorstr-security</span>
 </h1>
 <p align="center">
-    English | <a href="./README_CN.md">中文介绍</a>
+    <a href="./README.md">English</a> | 中文介绍
 </p>
 <p align="center">
-    <em>Bypass detection from Flare-floss</em><br>
+    <em>绕过Flare-floss</em><br>
 </p>
 
-# Design Background
-The xorstr technique has been thoroughly compromised by several open-source tools, including Flare-floss and my own open-source tool AntiXorstr. These open-source detection tools efficiently and quickly recover the original strings from the binary samples. To address this issue, this project has been designed with a focus on effectively countering these detection methods, particularly Flare-floss.
+# 设计背景
+xorstr已经被一些开源工具彻底攻破(包括Flare-floss和我自己开源的AntiXorstr)，这些开源的检测工具简单快速的从样本二进制中还原出原始的字符串。为了解决这个问题，该项目从设计之初就考虑了如何最大限度的对抗这些检测思路，尤其是Flare-floss
 
-### Overview
+### 概述
 
-There are two bypass techniques implemented in this project: xorstr_s and xorstr_h. These techniques are based on different principles.
+两种绕过方式基于不同的原理实现，xorstr_s & xorstr_h
 
 ### xorstr_s
 
-|            types            | status |
+|            检测方式          |检测情况|
 | :-------------------------: | :----: |
 | Flare-floss static strings  | bypass |
 |  Flare-floss stack strings  | bypass |
 |  Flare-floss tight strings  | bypass |
 | Flare-floss decoded strings |   /    |
 
-testing demo
+测试demo
 
 ```cpp
 void test()
@@ -44,7 +44,7 @@ void test()
 }
 ```
 
-Test result: STACK & TIGHT bypass, DECODED mode restored part of it
+测试结果：STACK & TIGHT 绕过，DECODED模式还原出一部分
 
 ```bash
  ─────────────────────
@@ -69,14 +69,14 @@ Honor
 
 ### xorstr_h
 
-|            types            | status |
+|            检测方式          |检测情况|
 | :-------------------------: | :----: |
 | Flare-floss static strings  | bypass |
 |  Flare-floss stack strings  | bypass |
 |  Flare-floss tight strings  | bypass |
 | Flare-floss decoded strings | bypass |
 
-Test result: demo is consistent with xorstr_s, bypassing in all modes
+测试结果：demo与xorstr_s一致，所有模式下的绕过
 
 ```bash
  FLOSS STACK STRINGS
@@ -106,4 +106,4 @@ o]QOIR[6<
 
 ### **todo**
 
-Detailed analysis and parsing of bypass details
+详细分析与绕过细节的解析文章

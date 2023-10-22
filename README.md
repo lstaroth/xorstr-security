@@ -104,6 +104,6 @@ sHTYNO<
 o]QOIR[6<
 ```
 
-### **todo**
-
-Detailed analysis and parsing of bypass details
+### Analysis Article
+**chinese**  
+https://notion-blog-lstaroth.vercel.app/article/xorstr2

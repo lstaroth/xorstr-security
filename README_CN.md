@@ -104,6 +104,5 @@ sHTYNO<
 o]QOIR[6<
 ```
 
-### **todo**
-
-详细分析与绕过细节的解析文章
+### Analysis Article
+https://notion-blog-lstaroth.vercel.app/article/xorstr2

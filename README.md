@@ -106,4 +106,4 @@ o]QOIR[6<
 
 ### Analysis Article
 **chinese**  
-https://notion-blog-lstaroth.vercel.app/article/xorstr2
+https://bbs.kanxue.com/thread-279309.htm
